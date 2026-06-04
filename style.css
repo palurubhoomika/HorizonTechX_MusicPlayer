@@ -1,0 +1,35 @@
+body {
+    height: 100vh;
+    background-image: url(C:/Images/background.jpg);
+    color: rgb(16, 16, 16);
+    font-family: Arial;
+    transition: background-color .5s;
+}
+
+.Player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+
+#poster {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.rotate {
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
